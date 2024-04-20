@@ -1,0 +1,56 @@
+
+
+So, we'll need a place to keep track of the "Pledges"
+
+Then, when the netting is calculated we'll make dumps to the "Donations" 
+and the "PoliticalContributions" tables. 
+
+Apart from that, each one of these will be connected to Users
+
+Then we'll probably have one for the charities and candidates as well
+
+users:
+  - user_id
+  - name
+  - dob
+  - stripe information needed?
+  - authentication info needed?
+
+Pledge:
+  - user_id
+  - amount
+  - candidate 
+  - charity
+  - race (not needed yet, but eventually)
+  - timestamp
+
+Donations:
+  - user_id
+  - charity_id
+  - amount
+  - date
+
+Contributions: 
+  - user_id
+  - candidate_id
+  - race_id (again, probably not necessary yet)
+  - amount
+  - date
+
+Candidates:
+  - candidate name
+  - political party
+  - race_id
+  - stripe information?
+
+Charities: 
+  - charity name
+  - stripe information? 
+
+
+
+
+
+
+
+
